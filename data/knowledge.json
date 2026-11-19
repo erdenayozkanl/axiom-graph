@@ -1,0 +1,15 @@
+{
+  "entities": [
+    {"id":"Lina","type":"Person","name":"Lina","description":"platform lead"},
+    {"id":"PlatformTeam","type":"Team","name":"Platform Team","description":"owns platform services"},
+    {"id":"ProfileService","type":"Service","name":"Profile Service","description":"profile API"},
+    {"id":"CustomerDataset","type":"Dataset","name":"Customer Dataset","description":"contains personal data"},
+    {"id":"PrivacyPolicy","type":"Policy","name":"Privacy Policy","description":"governs personal data"}
+  ],
+  "triples": [
+    {"subject":"Lina","predicate":"OWNS","object":"PlatformTeam","source":"ownership-record"},
+    {"subject":"PlatformTeam","predicate":"OWNS","object":"ProfileService","source":"service-catalog"},
+    {"subject":"ProfileService","predicate":"CONSUMES","object":"CustomerDataset","source":"data-lineage"},
+    {"subject":"PrivacyPolicy","predicate":"GOVERNS","object":"CustomerDataset","source":"policy-register"}
+  ]
+}

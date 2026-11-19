@@ -1,1 +1,1 @@
-from .core import KnowledgeGraph, Ontology, Triple, load_demo
+from .core import KnowledgeGraph, Ontology, Principal, Triple, load_demo

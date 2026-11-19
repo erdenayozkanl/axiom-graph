@@ -1,10 +1,10 @@
 {
   "entities": [
-    {"id":"Lina","type":"Person","name":"Lina","description":"platform lead"},
-    {"id":"PlatformTeam","type":"Team","name":"Platform Team","description":"owns platform services"},
-    {"id":"ProfileService","type":"Service","name":"Profile Service","description":"profile API"},
-    {"id":"CustomerDataset","type":"Dataset","name":"Customer Dataset","description":"contains personal data"},
-    {"id":"PrivacyPolicy","type":"Policy","name":"Privacy Policy","description":"governs personal data"}
+    {"id":"Lina","type":"Person","name":"Lina","description":"platform lead","tenant":"acme","classification":"internal"},
+    {"id":"PlatformTeam","type":"Team","name":"Platform Team","description":"owns platform services","tenant":"acme","classification":"internal"},
+    {"id":"ProfileService","type":"Service","name":"Profile Service","description":"profile API","tenant":"acme","classification":"internal"},
+    {"id":"CustomerDataset","type":"Dataset","name":"Customer Dataset","description":"contains personal data","tenant":"acme","classification":"confidential"},
+    {"id":"PrivacyPolicy","type":"Policy","name":"Privacy Policy","description":"governs personal data","tenant":"acme","classification":"internal"}
   ],
   "triples": [
     {"subject":"Lina","predicate":"OWNS","object":"PlatformTeam","source":"ownership-record"},
